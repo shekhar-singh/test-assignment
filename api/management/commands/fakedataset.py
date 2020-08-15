@@ -19,18 +19,16 @@ class Command(BaseCommand):
         		user_id=faker.md5()[::4].upper()
         		User.objects.create(user_id=user_id,real_name=faker.name(),tz=faker.timezone())
 
-        		self.stdout.write("%s Users created succesfully" % total)
-
         		ac=faker.random_int(1,5)
         		
         		for j in range(ac):
         			start_time=faker.date_time()
         			ActivityPeriod.objects.create(User_id=user_id,start_time=start_time, end_time=start_time+timedelta(hours=1))
 
-        		self.stdout.write("%s Activity created succesfully" % ac)
+        		#self.stdout.write("%s Activity created succesfully" % ac)
 
 
         	except:
         		pass
 
-        # self.stdout.write("%s Users and activity created succesfully" % total)
+        self.stdout.write("%s fakedataset created succesfully" % total)
