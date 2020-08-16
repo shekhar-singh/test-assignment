@@ -21,7 +21,7 @@ Make migrations
   
     python manage.py migrate
   
-    python manage.py runserver
+    gunicorn assignment.wsgi
   
 Custom management command
 
