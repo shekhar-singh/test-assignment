@@ -34,3 +34,4 @@ Custom management command
 local : http://127.0.0.1:8000/api/
 
 live : http://18.219.45.199/api/
+       http://ec2-18-219-45-199.us-east-2.compute.amazonaws.com/api/
